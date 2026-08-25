@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MarqueeJay Movies — discover movies, explore showtimes and choose your seats.">
+  <title>MarqueeJay Movies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+  <div class="top-strip">Book smarter. Watch better. <span>•</span> Your movie night starts here.</div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#">Marquee<span>Jay</span><small> MOVIES</small></a>
+      <div class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="Search for movies, genres or languages..." aria-label="Search movies">
+      </div>
+      <div class="header-actions">
+        <button class="city-btn" id="cityBtn" type="button">📍 <span id="cityLabel">Ahmedabad</span> ▾</button>
+        <button class="icon-btn" id="accountBtn" type="button" aria-label="Account">♙</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="category-nav" aria-label="Movie categories">
+    <div class="nav-scroll">
+      <button class="nav-chip active" data-filter="all">All</button>
+      <button class="nav-chip" data-filter="action">Action</button>
+      <button class="nav-chip" data-filter="comedy">Comedy</button>
+      <button class="nav-chip" data-filter="drama">Drama</button>
+      <button class="nav-chip" data-filter="thriller">Thriller</button>
+      <button class="nav-chip" data-filter="animation">Animation</button>
+      <button class="nav-chip" data-filter="english">English</button>
+      <button class="nav-chip" data-filter="hindi">Hindi</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-content">
+        <span class="hero-badge">NOW SHOWING</span>
+        <h1>Find your next<br><em>great watch.</em></h1>
+        <p>Discover popular movies, compare showtimes, pick your perfect seats and make movie night effortless.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#movies">Browse movies <span>→</span></a>
+          <button class="ghost-btn" id="surpriseBtn" type="button">🎲 Surprise me</button>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Featured movie artwork">
+        <div class="art-glow"></div>
+        <div class="poster poster-back"><span>THE<br>LAST<br>ORBIT</span></div>
+        <div class="poster poster-front"><span>NEON<br>HORIZON</span><small>IMAX • 2026</small></div>
+        <div class="floating-rating">★ <b>9.1</b><small>Audience rating</small></div>
+      </div>
+    </section>
+
+    <section class="container section" id="movies">
+      <div class="section-heading">
+        <div><span class="eyebrow">CURATED FOR YOU</span><h2>Movies you'll love</h2></div>
+        <span class="result-count" id="resultCount">8 movies</span>
+      </div>
+      <div class="movie-grid" id="movieGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>No movies match your search. Try another title or genre.</div>
+    </section>
+
+    <section class="promo container">
+      <div><span class="eyebrow">MARQUEEJAY PLUS</span><h2>Make every movie night<br>feel a little more special.</h2><p>Get early access, curated picks and member-only perks.</p></div>
+      <button class="light-btn" type="button" id="plusBtn">Explore Plus →</button>
+    </section>
+
+    <section class="container section upcoming-section">
+      <div class="section-heading"><div><span class="eyebrow">COMING SOON</span><h2>Save these dates</h2></div></div>
+      <div class="upcoming-row">
+        <article class="upcoming"><div class="date"><b>18</b><span>SEP</span></div><div><h3>Starfall</h3><p>Adventure • Sci-Fi</p></div><button type="button" class="remind-btn">Remind me</button></article>
+        <article class="upcoming"><div class="date"><b>26</b><span>SEP</span></div><div><h3>Paper Skies</h3><p>Drama • Romance</p></div><button type="button" class="remind-btn">Remind me</button></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><div class="logo">Marquee<span>Jay</span><small> MOVIES</small></div><p>© 2026 MarqueeJay. Built as an original educational project.</p><div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Help</a></div></div></footer>
+
+  <div class="modal" id="movieModal" aria-hidden="true"><div class="modal-card"><button class="close-btn" data-close type="button">×</button><div id="modalContent"></div></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="movies.js"></script>
+</body>
+</html>
