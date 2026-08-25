@@ -3,12 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="MarqueeJay — a clean, modern showcase built for the web.">
+    <title>MarqueeJay — Modern Web Showcase</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <div
-    </div>
-    
+    <header class="nav">
+        <div class="container nav-inner">
+            <a class="brand" href="#top">Marquee<span>Jay</span></a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#features">Highlights</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <div class="eyebrow reveal">Modern. Focused. Built to stand out.</div>
+                    <h1 class="reveal delay-1">Make your <span>presence</span> impossible to ignore.</h1>
+                    <p class="hero-copy reveal delay-2">
+                        MarqueeJay is a polished web experience with bold typography, smooth motion,
+                        responsive layouts, and a premium visual system that feels great on every screen.
+                    </p>
+                    <div class="actions reveal delay-2">
+                        <a class="btn btn-primary" href="#features">Explore the experience</a>
+                        <a class="btn btn-secondary" href="#contact">Get in touch</a>
+                    </div>
+                </div>
+
+                <div class="card reveal delay-2" aria-label="Project highlights">
+                    <div class="card-grid">
+                        <article class="metric">
+                            <strong>01</strong>
+                            <p>Clean visual hierarchy designed for instant clarity.</p>
+                        </article>
+                        <article class="metric">
+                            <strong>02</strong>
+                            <p>Responsive by default, from phones to large displays.</p>
+                        </article>
+                        <article class="metric">
+                            <strong>03</strong>
+                            <p>Subtle interactions that add energy without distraction.</p>
+                        </article>
+                        <article class="metric">
+                            <strong>04</strong>
+                            <p>Lightweight structure that is easy to extend and maintain.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="marquee-wrap" aria-hidden="true">
+            <div class="marquee">
+                <span>DESIGN WITH INTENT</span>
+                <span>BUILD WITH PURPOSE</span>
+                <span>CREATE SOMETHING MEMORABLE</span>
+                <span>DESIGN WITH INTENT</span>
+                <span>BUILD WITH PURPOSE</span>
+                <span>CREATE SOMETHING MEMORABLE</span>
+            </div>
+        </div>
+
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Simple idea. Strong execution.</h2>
+                    <p>
+                        Every part of the page is intentionally restrained: clear content, confident spacing,
+                        expressive type, and motion that supports the story instead of competing with it.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="features">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Built for a better first impression.</h2>
+                    <p>Three principles keep the experience sharp, useful, and professional.</p>
+                </div>
+                <div class="showcase">
+                    <article class="card">
+                        <div class="card-kicker">01 / Visual</div>
+                        <h3>Premium by design</h3>
+                        <p>Layered surfaces, balanced contrast, modern type, and purposeful whitespace create a refined look.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-kicker">02 / Motion</div>
+                        <h3>Alive, not noisy</h3>
+                        <p>Entrance transitions and an infinite marquee add personality while keeping the interface easy to use.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-kicker">03 / Responsive</div>
+                        <h3>Ready for every screen</h3>
+                        <p>The layout adapts naturally to smaller screens, with accessible spacing and reduced-motion support.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="cta">
+                    <h2>Ready to make it memorable?</h2>
+                    <p>Use this foundation as your polished starting point and keep building MarqueeJay into your own signature site.</p>
+                    <a class="btn btn-primary" href="mailto:hello@marqueejay.dev">Start a conversation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>© 2026 MarqueeJay</span>
+            <span>Crafted for the modern web.</span>
+        </div>
+    </footer>
 </body>
 </html>
